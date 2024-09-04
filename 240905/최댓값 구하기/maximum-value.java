@@ -10,6 +10,7 @@ public class Main {
         b = sc.nextInt();
         c = sc.nextInt();
 
+        /* sol-1
         if(a >= b && a >= c){
             System.out.println(a);
         }
@@ -18,6 +19,25 @@ public class Main {
         }
         else if(c >= a && c >= b){
             System.out.println(c);
+        }
+        */
+
+        // sol-2 중첩 조건문 사용
+        if(a >= b) {
+            if(a >= c){
+                System.out.println(a);
+            }
+            else{
+                System.out.println(c);
+            }
+        }
+        else{
+            if(b >= c){
+                System.out.println(b);
+            }
+            else{
+                System.out.println(c);
+            }
         }
     }
 }
