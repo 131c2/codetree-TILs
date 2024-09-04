@@ -23,5 +23,13 @@ public class Main {
                 System.out.println("N");
             }
         }
+        else{
+            if(symp2 == 'Y' && tem2 >= 37 && symp3 == 'Y' && tem3 >= 37 ){
+                System.out.println("E");
+            }
+            else{
+                System.out.println("N");
+            }
+        }
     }
 }
