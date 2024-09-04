@@ -13,10 +13,10 @@ public class Main {
         if(a >= b && a >= c){
             System.out.println(a);
         }
-        if(b >= a && b >= c){
+        else if(b >= a && b >= c){
             System.out.println(b);
         }
-        if(c >= a && c >= b){
+        else if(c >= a && c >= b){
             System.out.println(c);
         }
     }
