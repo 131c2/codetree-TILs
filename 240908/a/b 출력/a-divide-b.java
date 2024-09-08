@@ -6,8 +6,8 @@ public class Main {
 
         int a, b, i;
 
-        a = sc.nextInt();
-        b = sc.nextInt();        
+        a = sc.nextInt(); // a = 3
+        b = sc.nextInt(); // b = 5       
 
         System.out.print((a/b)+"."); // 0.
         
