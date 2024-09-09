@@ -11,7 +11,7 @@ public class Main {
         i = 1;
 
         while (i <= n){
-            if(i % 3 == 0 || i % 10 == 3 || i % 10 == 6 || i % 10 == 9 ){
+            if(i % 3 == 0 || i % 10 == 3 || i % 10 == 6 || i % 10 == 9 || i/10 == 3 || i/10 == 6 || i/10 == 9 ){
                 System.out.print(0 + " ");
             }
             else {
