@@ -13,12 +13,16 @@ public class Main {
 
         if(a > b){
             for(i = b ; i <= a ; i ++){
-                sumVal += i;
+                if(i % 5 == 0){
+                    sumVal += i;
+                }                
             }
         }
         else {
             for(i = a ; i >= b ; i ++){
-                sumVal += i;
+                if(i % 5 == 0){
+                    sumVal += i;
+                }
             }
         }
         System.out.print(sumVal);
