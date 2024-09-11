@@ -18,7 +18,10 @@ public class Main {
                 cnt ++;
             }
         }
-        System.out.printf("%d %.1f",sumVal,(double)(sumVal/cnt));
+        System.out.print(sumVal + " ");
+        System.out.print(sumVal/cnt + "." +sumVal%cnt);
+        
+        //System.out.printf("%d %.1f",sumVal,(double)(sumVal/cnt));
         
     }
 }
