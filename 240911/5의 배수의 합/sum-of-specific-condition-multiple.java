@@ -19,7 +19,7 @@ public class Main {
             }
         }
         else {
-            for(i = a ; i >= b ; i ++){
+            for(i = a ; i <= b ; i ++){
                 if(i % 5 == 0){
                     sumVal += i;
                 }
