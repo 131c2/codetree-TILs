@@ -10,7 +10,7 @@ public class Main {
 
         cnt = 0;
         
-        for(i = 1 ; i <= 5001 ; i ++){
+        for(i = 1 ; i <= 5000 ; i ++){
             n /= i;
             cnt ++;
 
