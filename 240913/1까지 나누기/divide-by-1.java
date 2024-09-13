@@ -10,8 +10,7 @@ public class Main {
 
         cnt = 0;
         
-        for(i = 1 ; i <= n ; i ++){
-            
+        for(i = 1 ; i <= 5000 ; i ++){
             n /= i;
             cnt ++;
 
@@ -19,6 +18,6 @@ public class Main {
                 break;
             }
         }
-        System.out.print(cnt + 1);
+        System.out.print(cnt);
     }
 }
