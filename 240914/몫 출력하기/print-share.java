@@ -9,19 +9,16 @@ public class Main {
         cnt = 0;
 
         for(;;){
-            a = sc.nextInt();
-
             if(cnt == 3){
                 break;
             }
-
-            else if(a % 2 == 0){
+            else{
+                a = sc.nextInt();
+                
+                if(a % 2 == 0){
                 System.out.println(a / 2);
                 cnt ++;
-            }
-
-            else{
-                continue;
+                }
             }
 
         }
