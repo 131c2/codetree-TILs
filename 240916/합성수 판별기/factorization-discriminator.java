@@ -13,6 +13,7 @@ public class Main {
         for(i = 2 ; i < n ; i ++){
             if(n % i == 0){
                 satisfied = true;
+                break;
             }
         }
         if(satisfied = true){
