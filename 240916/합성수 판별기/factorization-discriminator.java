@@ -10,7 +10,7 @@ public class Main {
 
         n = sc.nextInt();
 
-        for(i = 2 ; i < 500 ; i ++){
+        for(i = 2 ; i < n ; i ++){
             if(n % i == 0){
                 satisfied = true;
             }
