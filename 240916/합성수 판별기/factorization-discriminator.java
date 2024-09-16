@@ -16,7 +16,7 @@ public class Main {
                 break;
             }
         }
-        if(satisfied = true){
+        if(satisfied == true){
             System.out.print("C");
         }
         else{
