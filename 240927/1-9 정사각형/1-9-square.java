@@ -25,5 +25,16 @@ public class Main {
             }
             System.out.println();
         }
+        /* 해설풀이 : cnt 값이 10일 때 1로 초기화 시켜주면 그만..
+        for(int i = 0; i < n; i++) {
+            for(int j = 0; j < n; j++) {
+                System.out.print(cnt);
+                cnt++;
+                if(cnt == 10)
+                    cnt = 1;
+            }
+            System.out.println();
+        }
+*/
     }
 }
