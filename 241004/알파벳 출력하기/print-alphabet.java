@@ -14,6 +14,9 @@ public class Main {
             for(j = 1 ; j <= i ; j ++){
                 System.out.print((char)x);
                 x += 1;
+                if(x == 91){
+                    x = 65;
+                }
             }
             System.out.println();
         }
