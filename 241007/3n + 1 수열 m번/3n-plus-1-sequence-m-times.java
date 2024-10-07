@@ -19,9 +19,9 @@ public class Main {
                         cnt ++;
                     }
                     else{
-                    n *= 3;
-                    n ++;
-                    cnt++;
+                        n *= 3;
+                        n ++;
+                        cnt++;
                     }
                 }
                 else{
