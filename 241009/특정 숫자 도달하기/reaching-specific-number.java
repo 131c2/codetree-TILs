@@ -25,6 +25,6 @@ public class Main {
                 ave = (double)sum / i;
             }
         }
-        System.out.print(sum + " " + ave);
+        System.out.printf("%d %.1f",sum , ave);
     }
 }
