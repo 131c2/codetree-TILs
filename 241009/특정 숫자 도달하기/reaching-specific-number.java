@@ -12,16 +12,16 @@ public class Main {
         sum = 0;
         ave = 0;
 
-        for(i = 0 ; i < 10 ; i ++){
+        for(i = 1 ; i <= 10 ; i ++){
             a[i] = sc.nextInt();
             if(a[i] < 250){
                 sum += a[i];
             }
             else{
-                ave = (double)sum / i;
+                ave = (double)sum / (i-1);
                 break;
             }
-            if(i == 9){
+            if(i == 10){
                 ave = (double)sum / i;
             }
         }
