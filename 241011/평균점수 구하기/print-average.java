@@ -12,6 +12,6 @@ public class Main {
             a[i] = sc.nextDouble();
             sum += a[i];
         }
-        System.out.print(sum / 8);
+        System.out.printf("%.1f",sum / 8);
     }
 }
