@@ -13,7 +13,7 @@ public class Main {
         for(i = 0 ; i < n ; i ++){
             a[i] = sc.nextInt();
             if(a[i] % 2 == 0){
-                System.out.print(a[i]);
+                System.out.print(a[i] + " ");
             }
         }
     }
