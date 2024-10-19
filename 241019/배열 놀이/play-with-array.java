@@ -6,8 +6,6 @@ public class Main {
 
         int n, q, i, j, idx, b, c, d, s, e;
 
-        idx = -1;
-
         n = sc.nextInt();
         q = sc.nextInt();
 
@@ -25,6 +23,7 @@ public class Main {
                     System.out.print(a[c - 1]);
                 }
                 else{
+                    idx = -1;
                     d = sc.nextInt();
                     for(j = 0 ; j < n ; j ++){
                         if(a[j] == d){
@@ -36,7 +35,7 @@ public class Main {
                         System.out.print(0);
                     }
                     else{
-                        System.out.print(idx + 1 + " ");
+                        System.out.print(idx + 1);
                     }
                 }
             }
