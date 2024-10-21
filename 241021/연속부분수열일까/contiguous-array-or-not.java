@@ -28,7 +28,7 @@ public class Main {
 
         //배열 비교.
         for(i = 0 ; i < n1 ; i ++){
-            if(a[i] == b[0] && (i + n2) < n1){
+            if(a[i] == b[0] && (i + n2) <= n1){
                 for(j = 0 ; j < n2 ; j ++){
                     if(a[i + j] == b[j]){
                         cnt ++;
