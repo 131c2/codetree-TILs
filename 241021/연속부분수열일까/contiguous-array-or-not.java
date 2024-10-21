@@ -8,12 +8,12 @@ public class Main {
 
         idx = -1;
         cnt = 0;
-    
-        int[] a = new int[100];
-        int[] b = new int[100];
 
         n1 = sc.nextInt();
         n2 = sc.nextInt();
+    
+        int[] a = new int[n1];
+        int[] b = new int[n2];
 
         for(i = 0 ; i < n1 ; i ++){
             a[i] = sc.nextInt();
