@@ -28,18 +28,24 @@ public class Main {
                 break;
             }
         }
-        for(i = 0 ; i < n2 ; i ++){
-            if(a[idx + i] == b[i]){
-                cnt ++;
+        if(idx != -1){
+            for(i = 0 ; i < n2 ; i ++){
+                if(a[idx + i] == b[i]){
+                    cnt ++;
+                }
             }
-        }
+            if(cnt == n2){
+                System.out.print("Yes");
+            }
+            else{
+                System.out.print("No");
+            }
 
-        if(cnt == n2){
-            System.out.print("Yes");
         }
         else{
             System.out.print("No");
         }
+        
 
     }
 }
