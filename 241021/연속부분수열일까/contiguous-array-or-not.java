@@ -37,6 +37,7 @@ public class Main {
 
                 //cnt 값이 n2 값과 일치하면 Yes 출력 및 탈출
                 if(cnt == n2){
+                    System.out.print("Yes");
                     break;
                 }
                 // cnt값과 n2 값이 일치하지 않으면 cnt를 0으로 초기화 후 for문 진행
@@ -50,9 +51,5 @@ public class Main {
         if(cnt == 0){
             System.out.print("No");
         }
-        else{
-            System.out.print("Yes");
-        }
-
     }
 }
