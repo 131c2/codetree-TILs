@@ -4,12 +4,11 @@ public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
-        int n1, n2, i, j, idx, cnt;
+        int n1, n2, i, idx, cnt;
 
         idx = -1;
         cnt = 0;
     
-
         int[] a = new int[100];
         int[] b = new int[100];
 
