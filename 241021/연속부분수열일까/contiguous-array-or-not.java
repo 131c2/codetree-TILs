@@ -30,7 +30,7 @@ public class Main {
         for(i = 0 ; i < n1 ; i ++){
             if(a[i] == b[0]){
                 for(j = 0 ; j < n2 ; j ++){
-                    if(a[i + j] == b[j]){
+                    if(a[i + j] == b[j] && (i + j) < n1){
                         cnt ++;
                     }
                 }
