@@ -4,7 +4,7 @@ public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
-        int n1, n2, i, idx, cnt;
+        int n1, n2, i, j, idx, cnt;
 
         idx = -1;
         cnt = 0;
@@ -24,28 +24,23 @@ public class Main {
 
         for(i = 0 ; i < n1 ; i ++){
             if(a[i] == b[0]){
-                idx = i;
-                break;
-            }
-        }
-        if(idx != -1){
-            for(i = 0 ; i < n2 ; i ++){
-                if(a[idx + i] == b[i]){
-                    cnt ++;
+                for(j = 0 ; j < n2 ; j ++){
+                    if(a[i + j] == b[j]){
+                        cnt ++;
+                    }
+                }
+                if(cnt == n2){
+                    System.out.print("Yes");
+                    break;
+                }
+                else{
+                    cnt = 0;
                 }
             }
-            if(cnt == n2){
-                System.out.print("Yes");
-            }
-            else{
-                System.out.print("No");
-            }
-
         }
-        else{
+        if(cnt == 0){
             System.out.print("No");
         }
-        
 
     }
 }
