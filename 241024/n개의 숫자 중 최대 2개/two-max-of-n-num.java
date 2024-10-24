@@ -9,12 +9,11 @@ public class Main {
         
         INT_MIN = Integer.MIN_VALUE;
         
-
         N = sc.nextInt();
 
         int[] a = new int[N + 1];
 
-        a[N + 1] = INT_MIN;
+        a[N] = INT_MIN;
 
         for(i = 0 ; i < N ; i ++){
             a[i] = sc.nextInt();
