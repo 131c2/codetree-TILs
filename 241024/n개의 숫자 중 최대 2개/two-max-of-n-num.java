@@ -4,7 +4,7 @@ public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
-        int N, i, j, max, x;
+        int N, i, j, x;
         final int INT_MIN;
         
         INT_MIN = Integer.MIN_VALUE;
