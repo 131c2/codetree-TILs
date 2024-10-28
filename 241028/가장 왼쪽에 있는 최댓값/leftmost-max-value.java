@@ -17,7 +17,7 @@ public class Main {
             a[i] = sc.nextInt();
         }
 
-        for(i = 0 ; i < N ; i ++){
+        for(;;){
             max = INT_MIN;
             idx = -1;
 
