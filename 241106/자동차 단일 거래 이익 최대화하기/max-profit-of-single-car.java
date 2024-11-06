@@ -4,41 +4,50 @@ public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
-        int i, j, n, max, min, cnt, idxMin, idxMax;
+        int i, j, n, max, min, cnt, idxMin, idxMax, ans;
         final int INT_MIN = Integer.MIN_VALUE;
         final int INT_MAX = Integer.MAX_VALUE;
 
         cnt = 0;
-        idxMin = -1;
+        idxMin = 0;
         idxMax = -1;
+        ans = INT_MIN;
         n = sc.nextInt();
 
         max = INT_MIN;
         min = INT_MAX;
         
-        int[] a = new int[n + 1];
+        int[] a = new int[n];
 
         for(i = 0 ; i < n ; i ++){
             a[i] = sc.nextInt();
         }
 
-        //최솟값의 위치 찾기
         for(i = 0 ; i < n ; i ++){
-            if(a[i] < min){
-                min = a[i];
-                idxMin = i;
+            max = -1; //여기에 INT_MIN을 넣으면 왜 출력이 이상하게 나올까...
+            min = INT_MAX;
+            for(j = 0 ; j < n ; j ++){
+                if(a[j] > max && j > idxMax){
+                    max = a[j];
+                }
+            }
+            for(j = 0 ; j < n ; j ++){
+                if(a[j] == max){
+                    idxMax = j;
+                }
+            }
+            for(j = idxMin ; j <= idxMax ; j ++){
+                if(a[j] < min){
+                    min = a[j];
+                }
+            }
+            idxMin = idxMax;
+            if((max - min) > ans){
+                ans = max - min;
             }
         }
-
-        //최솟값의 뒤에 위치하면서 최댓값이 되는 항 찾기
-        for(i = 0 ; i < n ; i ++){
-            if(a[i] > max && i >= idxMin){
-                max = a[i];
-                idxMax = i;
-            }
-        }
-        if((idxMax - idxMin) > 0){
-            System.out.print(max - min);
+        if(ans > 0){
+            System.out.print(ans);
         }
         else{
             System.out.print(0);
