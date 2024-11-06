@@ -32,7 +32,7 @@ public class Main {
 
         //최솟값의 뒤에 위치하면서 최댓값이 되는 항 찾기
         for(i = 0 ; i < n ; i ++){
-            if(a[i] > max && i > idxMin){
+            if(a[i] > max && i >= idxMin){
                 max = a[i];
                 idxMax = i;
             }
