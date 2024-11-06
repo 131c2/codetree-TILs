@@ -34,9 +34,10 @@ public class Main {
         for(i = 0 ; i < n ; i ++){
             if(a[i] > max && i > idxMin){
                 max = a[i];
+                idxMax = i;
             }
         }
-        if((max - min) > 0){
+        if((idxMax - idxMin) > 0){
             System.out.print(max - min);
         }
         else{
