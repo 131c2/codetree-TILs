@@ -29,7 +29,7 @@ public class Main {
         else if(b > c && c > a){
             System.out.print(b - a);
         }
-        else{
+        else if(c > b && b > a){
             System.out.print(c - a);
         }
     }
