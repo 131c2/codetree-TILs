@@ -32,5 +32,8 @@ public class Main {
         else if(c > b && b > a){
             System.out.print(c - a);
         }
+        else{
+            System.out.print(0);
+        }
     }
 }
