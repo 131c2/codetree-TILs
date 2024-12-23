@@ -23,6 +23,7 @@ public class Main {
             }
             else{
                 ans = false;
+                break;
             }
         }
         if(ans == true){
