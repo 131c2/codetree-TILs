@@ -35,7 +35,10 @@ public class Main {
 
         for(i = 0 ; i <= cnt2 ; i ++){
             n ++;
-            if(arr[i] >= 10){
+            if(arr[i] >= 100){
+                n += 3;
+            }
+            else if(arr[i] >= 10){
                 n += 2;
             }
             else{
