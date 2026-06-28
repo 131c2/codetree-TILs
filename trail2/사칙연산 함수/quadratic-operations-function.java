@@ -18,7 +18,30 @@ public class Main {
         int a = sc.nextInt();
         char o = sc.next().charAt(0);
         int c = sc.nextInt();
-        
+
+        switch(o){
+            case '+':
+            System.out.printf("%d %c %d = %d",a, o, c,add(a, c));
+            break;
+
+            case '-':
+            System.out.printf("%d %c %d = %d",a, o, c,sub(a, c));
+            break;
+
+            case '*':
+            System.out.printf("%d %c %d = %d",a, o, c,mul(a, c));
+            break;
+
+            case '/':
+            System.out.printf("%d %c %d = %d",a, o, c,div(a, c));
+            break;
+
+            default:
+            System.out.println("False");
+        }
+
+
+        /*
         if(o == '+'){
             System.out.printf("%d %c %d = %d",a, o, c,add(a, c));
         }else if(o == '-'){
@@ -30,5 +53,6 @@ public class Main {
         }else{
             System.out.println("False");
         }
+        */
     }
 }
