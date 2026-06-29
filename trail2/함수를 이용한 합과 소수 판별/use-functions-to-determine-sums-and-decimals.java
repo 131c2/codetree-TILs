@@ -14,6 +14,17 @@ public class Main {
     }
 
     public static boolean isEven(int n){
+        int sum = 0;
+        
+        while(n > 0){
+            sum += n % 10;
+            n /= 10;
+        }
+
+        return sum % 2 == 0;
+    }
+    /*
+    public static boolean isEven(int n){
         int add = 0;
 
         add += (n % 10);
@@ -30,6 +41,8 @@ public class Main {
             return false;
         }
     }
+    */
+
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int a = sc.nextInt();
